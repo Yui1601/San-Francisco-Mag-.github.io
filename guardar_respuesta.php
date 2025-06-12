@@ -1,24 +1,28 @@
 <?php
-// Conexión a la base de datos
+// Conectar a la base de datos (cambia el nombre de la base si es diferente)
 $conexion = new mysqli("localhost", "root", "", "encuesta_magú");
 
-// Verificar conexión
+// Verificar la conexión
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
 }
 
-// Obtener los datos del formulario
+// Obtener datos del formulario
 $nombre = $_POST['nombre'];
 $edad = $_POST['edad'];
 $satisfaccion = $_POST['satisfaccion'];
 $mejora = $_POST['mejora'];
 
-// Insertar datos en la base de datos
+// Insertar datos
 $sql = "INSERT INTO respuestas (nombre, edad, satisfaccion, mejora)
         VALUES ('$nombre', $edad, '$satisfaccion', '$mejora')";
 
 if ($conexion->query($sql) === TRUE) {
-    echo "Respuestas guardadas correctamente.";
+    // 👇 ESTE ES EL MENSAJE QUE SE MUESTRA AL GUARDAR
+    echo "<script>
+        alert('¡Gracias por responder la encuesta!');
+        window.location.href = 'encuesta.html';
+    </script>";
 } else {
     echo "Error: " . $conexion->error;
 }
