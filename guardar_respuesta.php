@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // Conectar a la base de datos (cambia el nombre de la base si es diferente)
 $conexion = new mysqli("localhost", "root", "", "encuesta_magú");
 
