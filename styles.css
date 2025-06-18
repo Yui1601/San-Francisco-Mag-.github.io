@@ -204,3 +204,30 @@ nav ul li a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 16px;
 }
+.comentario {
+  background-color: #fff9f9;
+  padding: 15px;
+  border-left: 4px solid #800000;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.respuesta {
+  background-color: #fbeaea;
+  border-left: 4px solid #800000;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.respuesta-form {
+  margin-top: 10px;
+}
+
+.respuesta-form textarea {
+  width: 100%;
+  border: 2px solid #800000;
+  border-radius: 6px;
+  padding: 6px;
+  resize: vertical;
+}
