@@ -25,6 +25,9 @@
 
   <main>
     <section id="encuesta">
+      <section id="comentarios">
+  <?php include 'mostrar_comentarios.php'; ?>
+</section>
       <form id="encuestaForm" action="guardar_respuestas.php" method="POST">
         <p><strong>1. ¿Cuál es tu nombre?</strong></p>
         <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required /><br /><br />
