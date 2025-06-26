@@ -240,3 +240,13 @@ ver-btn {
   border-radius: 8px;
   margin-top: 10px;
 }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
